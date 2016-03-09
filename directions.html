@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+        
+        <title>The Louisville Game Shop</title>
+    <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/nav.css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+</head>
+<body>
+    
+    <header class="menu">
+    <a class="menuImage" href="index.html"><img src="img/finallogo.jpg" alt="The Louisville Game Shop" class="menu-image"></a>
+    <ul class="nav">
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="directions.html">DIRECTIONS</a></li>
+        <li><a href="gamerclub.html">GAMER'S CLUB</a></li>
+    </ul> 
+    </header>
+
+       <div class="sideBar" id="directions-info">
+      
+         <h3>Hours</h3>
+           <div class="sidebar-hours">
+    <p>Monday: 12-8PM</p>
+    <p>Tuesday: 12-8PM</p>
+    <p>Wednesday: Closed</p>
+    <p>Thursday: 12-8PM</p>
+    <p>Friday: 12-8PM</p>
+    <p>Saturday: 12-8PM</p>
+    <p>Sunday: 12-8PM</p>
+           </div>
+           <div class="sidebar-info">
+           <p>Located at 925 Baxter Ave</p> 
+        <p>Louisville, KY 40204</p>
+               
+            <p><img src="img/phone.png" alt="phone" class="phone-image"> (502) 456-2734</p>
+            <p><a class="facebook-image" href="https://www.facebook.com/The-Louisville-Game-Shop-303121397321/"><img src="img/facebook.png" alt="Facebook" class="facebook-image"></a><a class="twitter-image" href="https://twitter.com/GameShopTest"><img src="img/twitter.png" alt="Twitter" class="twitter-image"></a> </p> 
+           </div>
+       
+       
+       
+       </div>
+       
+   <div class ="directionsContainer">   
+    
+    
+    <div class="Directions">
+        <h1>Directions</h1>
+        
+        
+     <div id="map">
+    <script>
+          
+          function initMap() {
+  var myLatLng = {lat: 38.2420129, lng: -85.7254407};
+  var styleArray = [
+    {
+      featureType: "all",
+      stylers: [
+       { saturation: 80 }
+      ]
+    }
+  ];
+  // Create a map object and specify the DOM element for display.
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    scrollwheel: false,
+    styles: styleArray,
+    zoom: 16
+  });
+
+          // Create a marker and set its position.
+  var marker = new google.maps.Marker({
+    map: map,
+    position: myLatLng,
+    
+  });
+      }
+    </script>
+     <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPbOmy3xITKnPvFDQxqGYcziYzsCNkaqQ&callback=initMap">
+    </script>
+    </div>
+        
+        
+    <p>The Louisville Game Shop is located at 925 Baxter Avenue, in Louisville, Ky, in the 40204 Zip code.</p>
+
+        <p>From I-64 Westbound</p>
+
+<p>Get off I-64 at the Mellwood Avenue Exit. Turn right onto Frankfort Avenue. Turn right at the next light onto Pope Street. Follow Pope Street till it ends at Payne Street. Turn Right onto Payne Street. Take Payne Street To Baxter Avenue. Turn Left onto Baxter Avenue. The store is on the left, about three blocks up.</p>
+
+<p>From Bardstown Rd.</p>
+
+<p>Take Bardstown Rd. northwest until it ends at/merges with Baxter Avenue. The Louisville Game Shop is on the right, before you get to Broadway.</p>
+
+<p>From Broadway</p>
+
+<p>Take Broadway east until it ends at Baxter Avenue. Turn right onto Baxter Avenue. The Louisville Game Shop is on the left.</p>
+
+<p>From U of L</p>
+
+<p>Travel down Second Street. Turn right onto Oak Street. Follow Oak all the way into the highlands. Oak Street will become Winter Ave. Turn left when Winter intersects Baxter Avenue. The Louisville Game Shop will be on your right, after the five-way intersection.</p>
+    </div>
+       </div>
+    
+    
+        <footer class="mainFooter">
+		<span>&copy;2016</span>
+	</footer>
+    </body>
+
+
+
+
+
+
+
+
+</html>

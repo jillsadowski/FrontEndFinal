@@ -1,2 +1,2 @@
-# FrontEndFinal
-Code Louisville Front End Web Development Final
+Final for my Code Louisville Front End Web Development Course.
+
