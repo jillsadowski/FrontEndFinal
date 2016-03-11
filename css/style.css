@@ -78,6 +78,9 @@ HOME PAGE
     padding: 10px;
 }
 
+.calendar {
+    padding: 25px;
+}
 
     /** ABOUT **/
 
@@ -271,14 +274,6 @@ ABOUT PAGE
     width: 50%;
     }
 
-/***********************
-CALENDAR PAGE
-***********************/
-
-    .calendarMain {
-        margin-left: 250px;
-        margin-top: 100px;
-}
 
 
 /***********************
