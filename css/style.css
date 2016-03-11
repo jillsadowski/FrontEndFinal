@@ -41,7 +41,7 @@ HOME PAGE
     background-color: mediumpurple;
     box-shadow: 0 1px 4px rgba(0,0,0,.4);
     border-radius: 15px;
-    margin: 310px 15px 15px 15px;
+    margin: 10px 15px 15px 15px;
     padding: 1px;
     text-align: center;
     }
@@ -112,7 +112,7 @@ ABOUT PAGE
 
 .aboutFull {
     margin: 10%;
-    margin-top: 350px;
+    
 }
 
 
@@ -121,7 +121,7 @@ CONTACT PAGE
 ***********************/
 .contactContainer {
     margin: 10%;
-    margin-top: 320px;
+    
 }
 
 /** FORM **/
@@ -163,7 +163,7 @@ GAMER CLUB PAGE
 ***********************/
 .gamerClub {
     margin: 10%;
-    margin-top: 310px;
+    
 }
 
 .club-list {
@@ -187,7 +187,7 @@ DIRECTIONS PAGE
 ***********************/
 .directionsContainer {
     margin: 10%;
-   margin-top: 310px;
+  
 }
 
 
