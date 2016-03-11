@@ -70,20 +70,30 @@
     center: myLatLng,
     scrollwheel: false,
     styles: styleArray,
-    zoom: 16
+    zoom: 18
   });
 
           // Create a marker and set its position.
-  var marker = new google.maps.Marker({
+  var marker =  new google.maps.Marker({
     map: map,
-    position: myLatLng,
-    
+    draggable: true,
+    animation: google.maps.Animation.DROP,
+    position: {lat: 38.2420129, lng: -85.7254407}
   });
+  marker.addListener('click', toggleBounce);
+}
+
+function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
       }
     </script>
      <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPbOmy3xITKnPvFDQxqGYcziYzsCNkaqQ&callback=initMap">
-    </script>
+         </script>
     </div>
         
         

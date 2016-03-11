@@ -219,7 +219,7 @@ MEDIA QUERIES
 
     .homepage-image {
         display: block;
-        width: 70%;
+        max-width: 95%;
         max-height: 350px;
         align-content: center;
         border-radius: 15px;
