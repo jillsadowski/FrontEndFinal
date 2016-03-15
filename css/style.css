@@ -196,58 +196,26 @@ DIRECTIONS PAGE
 #map {
     width: 100%;
     height: 350px;
+    
 }
-.controls {
-        margin-top: 10px;
-        border: 1px solid transparent;
-        border-radius: 2px 0 0 2px;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        height: 20px;
-    max-width: 200px;
-        outline: none;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+#floating-panel {        
+    background-color: #fff;
+    padding: 10px;
+    line-height: 30px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+#end {
+    max-width: 230px;
 }
 
-.control-types {
-    display: flex;
+#btnGo {
+    border-radius: 5px;
+    color: blue;
+    background-color: azure;
+    border-color: antiquewhite;
+    margin-top: 25px;
 }
-#origin-input,
-      #destination-input {
-        background-color: #fff;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
-        text-overflow: ellipsis;
-        max-width: 200px;
-          height: 20px;
-      }
- #origin-input:focus,
-      #destination-input:focus {
-        border-color: #4d90fe;
-      }
-
-      #mode-selector {
-        color: #fff;
-        background-color: lightblue;
-        margin-left: 12px;
-        padding: 5px 11px 0px 11px;
-        height: 30px;
-      }
-
-      #mode-selector label {
-        font-family: Roboto;
-        font-size: 13px;
-        font-weight: 300;
-      }
-#mode-selector label {
-        font-family: Roboto;
-        font-size: 13px;
-        font-weight: 300;
-      }
-
 /* =================================
 MEDIA QUERIES
 ==================================== */
