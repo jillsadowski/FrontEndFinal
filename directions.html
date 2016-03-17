@@ -1,59 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-        
-        <title>The Louisville Game Shop</title>
+    <title>The Louisville Game Shop</title>
     <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/nav.css">
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-    
-  
 </head>
+    
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <header class="menu">
-    <a class="menuImage" href="index.html"><img src="img/finallogo.jpg" alt="The Louisville Game Shop" class="menu-image"></a>
-    <ul class="nav">
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="directions.html">DIRECTIONS</a></li>
-        <li><a href="gamerclub.html">GAMER'S CLUB</a></li>
-    </ul> 
+        <a class="menuImage" href="index.html"><img src="img/finallogo.jpg" alt="The Louisville Game Shop" class="menu-image"></a>
+        <ul class="nav">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="directions.html">DIRECTIONS</a></li>
+            <li><a href="gamerclub.html">GAMER'S CLUB</a></li>
+        </ul> 
     </header>
-
-       <div class="sideBar" id="directions-info">
-      
-         <h3>Hours</h3>
-           <div class="sidebar-hours">
-    <p>Monday: 12-8PM</p>
-    <p>Tuesday: 12-8PM</p>
-    <p>Wednesday: Closed</p>
-    <p>Thursday: 12-8PM</p>
-    <p>Friday: 12-8PM</p>
-    <p>Saturday: 12-8PM</p>
-    <p>Sunday: 12-8PM</p>
-           </div>
-           <div class="sidebar-info">
-           <p>Located at 925 Baxter Ave</p> 
-        <p>Louisville, KY 40204</p>
-               
+    <div class="sideBar" id="directions-info">
+        <h3>Hours</h3>
+        <div class="sidebar-hours">
+            <p>Monday: 12-8PM</p>
+            <p>Tuesday: 12-8PM</p>
+            <p>Wednesday: Closed</p>
+            <p>Thursday: 12-8PM</p>
+            <p>Friday: 12-8PM</p>
+            <p>Saturday: 12-8PM</p>
+            <p>Sunday: 12-8PM</p>
+        </div>
+        <div class="sidebar-info">
+            <p>Located at 925 Baxter Ave</p> 
+            <p>Louisville, KY 40204</p>  
             <p><img src="img/phone.png" alt="phone" class="phone-image"> (502) 456-2734</p>
             <p><a class="facebook-image" href="https://www.facebook.com/The-Louisville-Game-Shop-303121397321/"><img src="img/facebook.png" alt="Facebook" class="facebook-image"></a><a class="twitter-image" href="https://twitter.com/GameShopTest"><img src="img/twitter.png" alt="Twitter" class="twitter-image"></a> </p> 
-           </div>
+        </div>
+    </div>
        
-       
-       
-       </div>
-       
-   <div class ="directionsContainer">   
     
-    
+    <div class ="directionsContainer">   
     <div class="Directions">
-        
         <div id="map"></div>
 
     <script>
+        
        function initMap() {
     var directionsService = new google.maps.DirectionsService;
     var directionsDisplay = new google.maps.DirectionsRenderer;
@@ -69,10 +60,10 @@
     document.getElementById('btnGo').addEventListener('click', onChangeHandler);
 }
 
-function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+    function calculateAndDisplayRoute(directionsService, directionsDisplay) {
     directionsService.route({
         origin: document.getElementById('start').value,
-        destination: document.getElementById('end').value,
+        destination:"925 Baxter Ave, Louisville, KY 40204",
         travelMode: google.maps.TravelMode.DRIVING
     }, function (response, status) {
         if (status === google.maps.DirectionsStatus.OK) {
@@ -82,49 +73,29 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         }
     });
 }
- 
-        
-        </script>
+    </script>
         
      
   
-     <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPbOmy3xITKnPvFDQxqGYcziYzsCNkaqQ&callback=initMap">
-         </script>
-         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPbOmy3xITKnPvFDQxqGYcziYzsCNkaqQ&libraries=places&callback=initMap"
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPbOmy3xITKnPvFDQxqGYcziYzsCNkaqQ&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPbOmy3xITKnPvFDQxqGYcziYzsCNkaqQ&libraries=places&callback=initMap"
         async defer></script>
-        <div id="floating-panel">
+        
+    <div id="floating-panel">
         <b>Start: </b>
         <input id="start"/>
            <p></p>
-        <b>End: </b>
-        <select id="end">
-            <option value="925 Baxter Ave, Louisville, KY 40204">The Louisville Game Shop</option>
-            
-        </select>
+        <b id="end">End: </b>
+        The Louisville Game Shop
         <button id="btnGo">Get Directions</button>
     </div>
-    <div id="map"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-            async defer></script>
     </div>
-        
-        
-    
     </div>
-       </div>
     
-    
-        <footer class="mainFooter">
+       <footer class="mainFooter">
 		<span>&copy;2016</span>
-	</footer>
-    </body>
-
-
-
-
-
-
-
-
+	   </footer>
+</body>
+    
 </html>

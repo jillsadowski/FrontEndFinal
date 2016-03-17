@@ -17,10 +17,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height 100vh;
-
 }
+
 .row {
-    flex:1;
+    flex: 1;
 }
 
 /***********************
@@ -37,38 +37,38 @@ HOME PAGE
 }
 
 .sideBar {
-  
     background-color: mediumpurple;
     box-shadow: 0 1px 4px rgba(0,0,0,.4);
     border-radius: 15px;
     margin: 10px 15px 15px 15px;
     padding: 1px;
     text-align: center;
-    }
+}
+
 .sidebar-hours {
-        line-height: .5;
-    }
-    .sidebar-info {
-        padding-top: 5px;
-        line-height: .7;
-        padding-bottom: 10px;
-    }
-    .phone-image {
-        height: 1em;
-    }
+    line-height: .5;
+}
 
-    .facebook-image,
-    .twitter-image {
-        padding: 10px 10px 0;
+.sidebar-info {
+    padding-top: 5px;
+    line-height: .7;
+    padding-bottom: 10px;
+}
 
-    }
+.phone-image {
+    height: 1em;
+}
 
+.facebook-image,
+.twitter-image {
+    padding: 10px 10px 0;
+}
 
     /** SECTIONS **/
+
 .homepage-image {
     display: none;
 }
-
 
 .section {
     background-color: lightcyan;
@@ -87,11 +87,13 @@ HOME PAGE
 .about p {
     font-size: 90%;
 }
+
    /** GAMES **/
 
 .twitter {
     max-width: 100%;
 }
+
     /** FOOTER **/
 
 .mainFooter {
@@ -101,7 +103,6 @@ HOME PAGE
 }
 
 
-
 /***********************
 ABOUT PAGE
 ***********************/
@@ -109,18 +110,17 @@ ABOUT PAGE
 .aboutImage {
     width: 90%;
     border-radius: 15px;
-    
 }
 
 .aboutFull {
     margin: 10%;
-    
 }
 
 
 /***********************
 CONTACT PAGE
 ***********************/
+
 .contactContainer {
     margin: 10%;
     
@@ -130,10 +130,11 @@ CONTACT PAGE
 
 label ,
 button {
-  display: block;
-  margin-bottom: 10px;
-    padding-top:5px
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 5px
 }
+
 .submit {
     background-color: lightcoral;
     color: aqua;
@@ -147,6 +148,7 @@ form {
     padding: 10px;
     border-radius: 10px;
 }
+
 input[type="text"],
 input[type="email"],
 textarea,
@@ -157,21 +159,20 @@ select {
     background-color: aliceblue;
     border-radius: 5px;
     border: none;
-
 }
+
 
 /***********************
 GAMER CLUB PAGE
 ***********************/
+
 .gamerClub {
-    margin: 10%;
-    
+    margin: 10%;    
 }
 
 .club-list {
     display: flex;
     flex-direction: row;
-
 }
 
 .club-list li {
@@ -187,17 +188,16 @@ GAMER CLUB PAGE
 /***********************
 DIRECTIONS PAGE
 ***********************/
+
 .directionsContainer {
     margin: 10%;
-  
 }
-
 
 #map {
     width: 100%;
-    height: 350px;
-    
+    height: 350px;   
 }
+
 #floating-panel {        
     background-color: #fff;
     padding: 10px;
@@ -205,6 +205,7 @@ DIRECTIONS PAGE
     padding-left: 10px;
     margin-top: 20px;
 }
+
 #end {
     max-width: 230px;
 }
@@ -216,10 +217,11 @@ DIRECTIONS PAGE
     border-color: antiquewhite;
     margin-top: 25px;
 }
+
+
 /* =================================
 MEDIA QUERIES
 ==================================== */
-
 
 
 @media (min-width: 769px) {
@@ -227,14 +229,14 @@ MEDIA QUERIES
     .hidden-hours {
         display: none;
     }
+    
     .container,
     .containertwo {
         max-width: 1000px;
         margin: 0 auto;
         margin-left: 250px;
         margin-right: 15px;
-}
-
+    }
 
     .homepage-image {
         display: block;
@@ -244,7 +246,8 @@ MEDIA QUERIES
         border-radius: 15px;
         margin: 65px 15px 20px 260px;
         box-shadow: 0 1px 4px rgba(0,0,0,.4);
-}
+    }
+    
     .about {
         margin-top: 10px;
     }
@@ -271,9 +274,6 @@ MEDIA QUERIES
         box-shadow: 0 1px 4px rgba(0,0,0,.4);
         margin: 0;
     }
-    
-    
-
 
 /***********************
 ABOUT PAGE
@@ -282,7 +282,7 @@ ABOUT PAGE
     .aboutFull {
         margin-left: 250px;
         margin-top: 100px;
-}
+    }
     
     .aboutImage {
     float: left;
@@ -290,38 +290,38 @@ ABOUT PAGE
     width: 50%;
     }
 
-
-
 /***********************
 CONTACT PAGE
 ***********************/
+    
     .contactContainer {
         margin-left: 250px;
         margin-top: 100px;
-}
+    }
 
 /***********************
 GAMER CLUB PAGE
 ***********************/
+    
     .gamerClub {
         margin-left: 250px;
         margin-top: 100px;
-
-}
-    /***********************
+    }
+    
+/***********************
 DIRECTIONS  PAGE
 ***********************/
+    
     .directionsContainer {
         margin-left: 250px;
         margin-top: 100px;
-
-}
+    }
 
     body {
         height:100%;
+    }
+
 }
-
-
 
 
 @media (min-width: 1025px) {
@@ -329,7 +329,8 @@ DIRECTIONS  PAGE
     .container,
     .containertwo {
         display: flex;
-}
+    }
+    
     .containertwo {
         padding-bottom: 50px;
     }
@@ -337,6 +338,6 @@ DIRECTIONS  PAGE
     .section {
         flex-basis: 50%;
         flex: 1;
-}
+    }
 
 }
