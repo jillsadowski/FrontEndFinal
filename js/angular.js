@@ -16,3 +16,5 @@ var scopeInit = function ($scope) {
 }
 app.controller('GamerClubTabsController', ['$scope',scopeInit])
 
+
+
